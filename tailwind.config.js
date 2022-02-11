@@ -1,0 +1,24 @@
+module.exports = {
+	mode: "jit",
+	content: [
+		"./pages/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
+	],
+	plugins: [],
+	theme: {
+		fontFamily: {
+			varela: "Varela Round",
+		},
+		extend: {
+			colors: {
+				main: {
+					100: "#8baaff",
+				},
+			},
+			backgroundImage: {
+				gaoo: "url('~/public/images/gaoo.jpg')",
+        blue: "url('~/public/images/rila-blue.jpg')",
+			},
+		},
+	},
+};
