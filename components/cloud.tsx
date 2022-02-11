@@ -42,20 +42,28 @@ function useWindowSize() {
 }
 
 function getRandomNumber() {
-	return Math.floor(Math.random() * (30000 - 15000) + 15000);
+	return Math.floor(Math.random() * (40000 - 20000) + 20000);
 }
 
 export const Cloud = ({ yPosition, xPosition }: Prop) => {
 	const size = useWindowSize();
 
 	const x = xPosition.split("-");
+	let intX = 0;
+	if (x.length == 3) {
+		intX = parseInt(x[2]);
+	} else {
+		intX = parseInt(x[1]);
+	}
 
 	const props = useSpring({
-		from: { x: 0 },
-		to: { x: size.width + parseInt(x[2]) * 4 },
+		from: { x: -intX * 4 },
+		to: { x: size.width + intX * 4 },
 		loop: true,
 		config: { duration: getRandomNumber() },
 	});
+
+	console.log(`xPosition: ${xPosition} yPosition: ${yPosition}`);
 
 	return (
 		<>

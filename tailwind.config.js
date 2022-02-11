@@ -19,6 +19,10 @@ module.exports = {
 				gaoo: "url('~/public/images/gaoo.jpg')",
         blue: "url('~/public/images/rila-blue.jpg')",
 			},
+      spacing: {
+        "144": "576px",
+        "192": "768px"
+      }
 		},
 	},
 };

@@ -2,12 +2,17 @@ import { InferGetServerSidePropsType } from "next";
 import { useEffect, useState } from "react";
 
 interface Meta {
-	page: String;
+	page: string;
 }
 
 interface Data {
-	data: [];
+	data: InnerData[];
 	meta: Meta;
+}
+
+interface InnerData {
+  id: string;
+  fact: string;
 }
 
 export const Fact = () => {
@@ -20,7 +25,7 @@ export const Fact = () => {
         throw Error("res not ok");
       }
       const data: Data = await res.json();
-      if (data !== undefined && data.data !== undefined) {
+      if (data !== undefined && data.data[0] !== undefined) {
         setFact(data.data[0].fact);
       }
 		} catch (err) {
