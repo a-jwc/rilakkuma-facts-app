@@ -38,7 +38,7 @@ export const Fact = () => {
 	}, [setFact]);
 
 	return (
-		<div className="text-center mx-auto h-auto p-16 text-2xl col-start-1 col-end-4 z-10">
+		<div className="text-center mx-auto h-auto p-16 text-2xl col-start-1 col-end-4 z-10 bg-white/50 m-12">
 			Fact: {fact}
 		</div>
 	);
