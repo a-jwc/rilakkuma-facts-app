@@ -8,6 +8,10 @@
 		overflow-x: hidden;
 	}
 
+	.cloud {
+		animation: fadeIn 1s;
+	}
+
 	.header-container {
 		width: 100%;
 		height: 100%;
@@ -21,6 +25,15 @@
 			width: 100% !important;
 			position: relative !important;
 			height: unset !important;
+		}
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
 		}
 	}
 }
