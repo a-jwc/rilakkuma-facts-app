@@ -19,7 +19,6 @@ export const Footer = () => {
 						objectFit="cover"
 						className={`header-image`}
 					/>
-					1
 				</a>
 			</div>
 			<div className="header-container mx-auto relative pb-16">
