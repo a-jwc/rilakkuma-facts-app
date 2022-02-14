@@ -16,9 +16,9 @@ module.exports = {
 				},
 			},
 			backgroundImage: {
-				gaoo: "url('~/public/images/gaoo.jpg')",
-				blue: "url('~/public/images/rila-blue-wallpaper.jpg')",
-				pink: "url('~/public/images/rila-pink-wallpaper.jpg')",
+				gaoo: "url('/images/gaoo.jpg')",
+				blue: "url('/images/rila-blue-wallpaper.jpg')",
+				pink: "url('/images/rila-pink-wallpaper.jpg')",
 			},
 			spacing: {
 				112: "448px",
