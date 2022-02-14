@@ -17,13 +17,17 @@ module.exports = {
 			},
 			backgroundImage: {
 				gaoo: "url('~/public/images/gaoo.jpg')",
-        blue: "url('~/public/images/rila-blue.jpg')",
+				blue: "url('~/public/images/rila-blue-wallpaper.jpg')",
+				pink: "url('~/public/images/rila-pink-wallpaper.jpg')",
 			},
-      spacing: {
-        "112": "448px",
-        "144": "576px",
-        "192": "768px"
-      }
+			spacing: {
+				112: "448px",
+				144: "576px",
+				192: "768px",
+			},
+			cursor: {
+				rila: "url('~/public/images/rila.cur')",
+			},
 		},
 	},
 };
