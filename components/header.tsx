@@ -19,9 +19,6 @@ export const Header = () => {
 					</Link>
 				</div>
 			</>
-			{/* <div className="text-center text-4xl col-start-2 col-end-3 z-10 ">
-				Rilakkuma Facts!
-			</div> */}
 		</header>
 	);
 };

@@ -7,6 +7,7 @@ import { Fact } from "../components/fact";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import { DanceGif } from "../components/dance-gif";
+import { Title } from "../components/title";
 
 const Home: NextPage = () => {
 	return (
@@ -22,21 +23,11 @@ const Home: NextPage = () => {
 				{/* <div className="text-center text-7xl col-start-2 col-end-4 z-10 ">
 					Rilakkuma Facts!
 				</div> */}
-				<div className="header-container mx-auto row-start-1 row-end-2 relative col-start-2 col-end-4 z-10 self-start">
-					<>
-						<Image
-							src="/images/rila-yellow-2-title-transparent.png"
-							layout="responsive"
-							width={576}
-							height={208}
-							alt="relax bear"
-							objectFit="cover"
-							className="header-image"
-						/>
-					</>
-				</div>
+				<Title />
 				<Fact />
-				<Footer />
+				<div className="flex flex-row col-start-1 col-end-4">
+					<Footer />
+				</div>
 			</div>
 		</div>
 	);
