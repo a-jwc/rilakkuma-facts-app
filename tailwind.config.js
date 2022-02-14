@@ -20,6 +20,7 @@ module.exports = {
         blue: "url('~/public/images/rila-blue.jpg')",
 			},
       spacing: {
+        "112": "448px",
         "144": "576px",
         "192": "768px"
       }
