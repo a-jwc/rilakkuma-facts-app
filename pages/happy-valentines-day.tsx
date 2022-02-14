@@ -32,6 +32,8 @@ const HappyValentinesDay: NextPage = () => {
 				</>
 				<div className="text-center text-4xl h-auto justify-self-center col-start-2 col-end-3 z-10 mt-10 bg-white/50 m-12 mx-auto p-16">
 					<p>Happy Valentine&apos;s Day Dani! 💝</p>
+          <br />
+          <p>From: Alex and Rilakkuma 👬</p>
 				</div>
 				<Footer />
 				<div className="col-start-3 col-end-4 row-start-2 row-end-3 place-self-center m-12">
