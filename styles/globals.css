@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    cursor: url('~/public/images/rila.cur'), auto;
+  }
+
 	body {
 		overflow-x: hidden;
 	}
