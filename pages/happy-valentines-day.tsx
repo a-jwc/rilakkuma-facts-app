@@ -10,7 +10,7 @@ import { DanceGif } from "../components/dance-gif";
 
 const HappyValentinesDay: NextPage = () => {
 	return (
-		<div className="bg-blue h-screen bg-no-repeat bg-bottom font-varela bg-cover bg-origin-border overflow-x-hidden">
+		<div className="bg-pink h-screen bg-no-repeat bg-bottom font-varela bg-cover bg-origin-border overflow-hidden">
 			<Head>
 				<title>Rilakkuma Facts</title>
 			</Head>
@@ -30,7 +30,7 @@ const HappyValentinesDay: NextPage = () => {
 						/>
 					</div>
 				</>
-				<div className="text-center text-4xl h-auto justify-self-center col-start-2 col-end-3 z-10 mt-10 bg-white/50 m-12 mx-auto p-16">
+				<div className="text-center text-4xl h-auto justify-self-center col-start-2 col-end-3 z-10 mt-10 bg-white/75 m-12 mx-auto p-16 tracking-wide">
 					<p>Happy Valentine&apos;s Day Dani! 💝</p>
           <br />
           <p>From: Alex and Rilakkuma 👬</p>
