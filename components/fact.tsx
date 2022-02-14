@@ -20,7 +20,7 @@ export const Fact = () => {
 
 	const getData = async () => {
 		try {
-			const res = await fetch("http://localhost:8080/fact");
+			const res = await fetch("https://rilakkuma-facts-api.herokuapp.com/fact");
 			if (!res.ok) {
 				throw Error("res not ok");
 			}
