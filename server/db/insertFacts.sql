@@ -9,4 +9,5 @@ INSERT INTO facts (fact) VALUES
 ("Rilakkuma's good friends are Korilakkuma and Kiiroitori 👩‍👦‍👦!"),
 ("Rilakkuma spends every day relaxing!"),
 ("The zipper on his back reveals that his appearance is a costume, but his true form is unknown!"),
-("Rilakkuma's best friend ever is Dani!");
+("Rilakkuma's best friend ever is Dani!"),
+("Rilakkuma likes to scratch his butt!");
