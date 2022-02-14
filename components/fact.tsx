@@ -42,8 +42,8 @@ export const Fact = () => {
 	}
 
 	return (
-		<div className="text-center col-start-1 col-end-4 z-10 mx-auto ">
-			<div className="text-center mx-auto h-auto p-16 text-2xl bg-white/50 m-12">
+		<div className="text-center col-start-1 col-end-4 z-10 mx-auto relative">
+			<div className="text-center mx-auto h-auto p-16 text-2xl bg-white/50 m-12 z-10">
 				Fact: {fact}
 			</div>
 			<button

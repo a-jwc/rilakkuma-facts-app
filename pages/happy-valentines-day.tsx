@@ -10,7 +10,7 @@ import { DanceGif } from "../components/dance-gif";
 
 const HappyValentinesDay: NextPage = () => {
 	return (
-		<div className="bg-pink h-screen bg-no-repeat bg-bottom font-varela bg-cover bg-origin-border overflow-hidden">
+		<div className="bg-pink h-screen bg-no-repeat bg-bottom font-varela bg-cover bg-origin-border overflow-x-hidden">
 			<Head>
 				<title>Rilakkuma Facts</title>
 			</Head>
@@ -19,27 +19,29 @@ const HappyValentinesDay: NextPage = () => {
 				<div className="col-start-1">
 					<Header />
 				</div>
-				<>
-					<div className="header-container mx-auto row-start-1 row-end-2 h-52 w-144 relative col-start-2 col-end-4 z-10 self-start">
+				<div className="header-container mx-auto row-start-1 row-end-2 relative col-start-2 col-end-4 z-10 self-start">
+					<>
 						<Image
 							src="/images/rila-yellow-2-title-transparent.png"
-							layout="fill"
+							layout="responsive"
+							width={576}
+							height={208}
 							alt="relax bear"
 							objectFit="cover"
 							className="header-image"
 						/>
-					</div>
-				</>
-				<div className="text-center text-4xl h-auto justify-self-center col-start-2 col-end-3 z-10 mt-10 bg-white/75 m-12 mx-auto p-16 tracking-wide">
+					</>
+				</div>
+				<div className="text-center text-4xl h-auto justify-self-center col-start-2 col-end-3 z-10 mt-10 bg-white/75 m-12 mx-auto p-16 tracking-wide relative">
 					<p>Happy Valentine&apos;s Day Dani! 💝</p>
-          <br />
-          <p>From: Alex and Rilakkuma 👬</p>
+					<br />
+					<p>From: Alex and Rilakkuma 👬</p>
 				</div>
 				<Footer />
 				<div className="col-start-3 col-end-4 row-start-2 row-end-3 place-self-center m-12">
 					<DanceGif />
 				</div>
-				<div className="col-start-1 col-end-2 row-start-2 row-end-3 place-self-center">
+				<div className="col-start-1 col-end-2 row-start-2 row-end-3 place-self-center m-12">
 					<DanceGif />
 				</div>
 			</div>
