@@ -11,8 +11,8 @@ interface Data {
 }
 
 interface InnerData {
-  id: string;
-  fact: string;
+	id: string;
+	fact: string;
 }
 
 export const Fact = () => {
@@ -20,14 +20,14 @@ export const Fact = () => {
 
 	const getData = async () => {
 		try {
-      const res = await fetch("http://localhost:8080/fact");
-      if (!res.ok) {
-        throw Error("res not ok");
-      }
-      const data: Data = await res.json();
-      if (data !== undefined && data.data[0] !== undefined) {
-        setFact(data.data[0].fact);
-      }
+			const res = await fetch("http://localhost:8080/fact");
+			if (!res.ok) {
+				throw Error("res not ok");
+			}
+			const data: Data = await res.json();
+			if (data !== undefined && data.data[0] !== undefined) {
+				setFact(data.data[0].fact);
+			}
 		} catch (err) {
 			console.error(err);
 		}
@@ -37,9 +37,23 @@ export const Fact = () => {
 		getData();
 	}, [setFact]);
 
+	function getNewFact(): void {
+		getData();
+	}
+
 	return (
-		<div className="text-center mx-auto h-auto p-16 text-2xl col-start-1 col-end-4 z-10 bg-white/50 m-12">
-			Fact: {fact}
+		<div className="text-center col-start-1 col-end-4 z-10 mx-auto ">
+			<div className="text-center mx-auto h-auto p-16 text-2xl bg-white/50 m-12">
+				Fact: {fact}
+			</div>
+			<button
+				onClick={() => getNewFact()}
+				className="text-white my-2 w-36 bg-yellow-600
+            mr-4 py-2 px-4 rounded-full border-0 text-sm font-semibold
+            hover:cursor-pointe hover:bg-yellow-400 z-10"
+			>
+				New Fact
+			</button>
 		</div>
 	);
 };
