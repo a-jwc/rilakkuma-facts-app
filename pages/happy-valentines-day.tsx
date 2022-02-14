@@ -37,7 +37,9 @@ const HappyValentinesDay: NextPage = () => {
 					<br />
 					<p>From: Alex and Rilakkuma 👬</p>
 				</div>
-				<Footer />
+				<div className="flex flex-row col-start-1 col-end-4">
+					<Footer />
+				</div>
 				<div className="col-start-3 col-end-4 row-start-2 row-end-3 place-self-center m-12">
 					<DanceGif />
 				</div>
