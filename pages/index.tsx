@@ -34,7 +34,7 @@ const Home: NextPage = () => {
 					</div>
 				</>
 				<Fact />
-				{/* <Footer /> */}
+				<Footer />
 				<div className="col-start-3 col-end-4 row-start-3 row-end-4 place-self-center m-12">
 					<DanceGif />
 				</div>

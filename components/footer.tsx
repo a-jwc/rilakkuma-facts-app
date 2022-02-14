@@ -1,7 +1,17 @@
+import Image from "next/image";
+
 export const Footer = () => {
 	return (
-		<div className="text-center text-lg h-36 justify-self-center col-start-2 col-end-3 z-10 mt-10">
-			<p>Happy Valentines Day Dani 💝</p>
-		</div>
+		<>
+			<div className="header-container mx-auto h-96 w-96 relative">
+				<Image
+					src="/images/rila-icecream-transparent.png"
+          layout="fill"
+					alt="icecream"
+					objectFit="cover"
+					className={`header-image`}
+				/>
+			</div>
+		</>
 	);
 };
