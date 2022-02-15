@@ -8,6 +8,10 @@ import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import { DanceGif } from "../components/dance-gif";
 import { Title } from "../components/title";
+import { Attribution } from "../components/attribution";
+
+// Attribution
+// Link: https://wallpaperbat.com/rilakkuma-computer-wallpapers
 
 const Home: NextPage = () => {
 	return (
@@ -28,6 +32,7 @@ const Home: NextPage = () => {
 				<div className="flex flex-row col-start-1 col-end-4">
 					<Footer />
 				</div>
+        <Attribution />
 			</div>
 		</div>
 	);

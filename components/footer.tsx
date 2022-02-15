@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Author: ป่านแก้ว รัก Link: https://br.pinterest.com/pin/5911043243167391/
+// Link: https://licensinginternational.org/news/rilakkumas-laid-back-kawaii-style-set-for-uk-growth/
+
 export const Footer = () => {
 	return (
 		<>

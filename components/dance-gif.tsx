@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+// Attribution
+// Link: https://tenor.com/view/rilakkuma-dancing-happy-gif-8096245
+
 export const DanceGif = () => {
 	return (
 		<>
