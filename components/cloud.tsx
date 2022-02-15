@@ -59,8 +59,8 @@ export const Cloud = ({ yPosition, xPosition }: Prop) => {
 		loop: true,
 		config: { duration: getRandomNumber() },
 	});
-
-	console.log(`xPosition: ${xPosition} yPosition: ${yPosition}`);
+  console.log(size)
+	// console.log(`xPosition: ${xPosition} yPosition: ${yPosition}`);
 
 	return (
 		<>
